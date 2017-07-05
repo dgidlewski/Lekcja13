@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.darek.lekcja13.MainActivity">
+
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nazwa telefonu:"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="28dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/editMarka"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignBaseline="@+id/nameLabel"
+        android:layout_alignBottom="@+id/nameLabel"
+        android:layout_toEndOf="@+id/nameLabel"
+        android:layout_toRightOf="@+id/nameLabel"
+        android:layout_marginLeft="22dp" />
+
+    <TextView
+        android:id="@+id/modelLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model telefonu:"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/editMarka"
+        android:layout_toLeftOf="@+id/editMarka" />
+
+    <EditText
+        android:id="@+id/editNazwa"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="71dp"
+        android:layout_alignBaseline="@+id/modelLabel"
+        android:layout_alignBottom="@+id/modelLabel"
+        android:layout_alignLeft="@+id/editMarka" />
+
+    <TextView
+        android:id="@+id/descriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editNazwa"
+        android:layout_marginTop="22dp"
+        android:text="Opis:"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="332dp"
+        android:layout_alignRight="@+id/modelLabel" />
+
+    <EditText
+        android:id="@+id/editOpis"
+        android:layout_width="215dp"
+        android:layout_height="43dp"
+        android:layout_alignTop="@+id/descriptionLabel"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_alignLeft="@+id/editNazwa" />
+
+    <Button
+        android:id="@+id/dodaj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editOpis"
+        android:layout_marginTop="11dp"
+        android:text="DODAJTELEFON"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="186dp"
+        android:layout_alignRight="@+id/editOpis" />
+
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dodaj"
+        android:layout_marginTop="34dp"
+        android:text="Nazwa telefonu:"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="28dp"
+        android:layout_alignRight="@+id/descriptionLabel" />
+
+    <TextView
+        android:id="@+id/textmodel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textname"
+        android:layout_marginTop="22dp"
+        android:text="Model telefonu:"
+        android:layout_alignRight="@+id/textname" />
+
+    <TextView
+        android:id="@+id/textdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textmodel"
+        android:layout_marginTop="23dp"
+        android:text="Opis:"
+        android:layout_alignRight="@+id/textmodel" />
+
+    <TextView
+        android:id="@+id/textMarka"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textname"
+        android:layout_alignBottom="@+id/textname"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="299dp"
+        android:layout_alignRight="@+id/dodaj" />
+
+    <TextView
+        android:id="@+id/textNazwa"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textmodel"
+        android:layout_alignLeft="@+id/textMarka" />
+
+    <TextView
+        android:id="@+id/textOpis"
+        android:layout_width="215dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textdescription"
+        android:layout_alignBottom="@+id/textdescription"
+        android:layout_alignLeft="@+id/textNazwa" />
+
+    <Button
+        android:id="@+id/wyswietl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Wyświetl"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textdescription" />
+
+    <Button
+        android:id="@+id/poprzedni"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/wyswietl"
+        android:layout_alignBottom="@+id/wyswietl"
+        android:text="&lt;"
+        android:layout_toRightOf="@+id/wyswietl" />
+
+    <Button
+        android:id="@+id/nastepny"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/poprzedni"
+        android:layout_alignBottom="@+id/poprzedni"
+        android:text="&gt;"
+        android:layout_toRightOf="@+id/poprzedni" />
+
+    <Button
+        android:id="@+id/usun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuń"
+        android:layout_alignBaseline="@+id/nastepny"
+        android:layout_alignBottom="@+id/nastepny"
+        android:layout_alignRight="@+id/textOpis"
+        android:layout_toRightOf="@+id/nastepny" />
+
+</RelativeLayout>
